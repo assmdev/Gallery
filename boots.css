@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*navigation bar*/
+#navbar{
+  background-color: #ffffff86;
+  box-shadow: 0px 8px 16px rgba(107, 107, 107, 0.438);
+  font-family: "Dancing Script", cursive;
+
+}
+
+.logo , .menu{
+  color: rgb(8, 158, 218);
+  font-weight:700;
+}
+
+
+/* @media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #ffffff70;
+    position:fixed;
+    right: 0;
+    top: 66.64px;
+    height: 100%;
+    min-width: 30%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.438);
+  }
+} */
+
+#dropdown-list li a{
+  color: rgb(58, 58, 58);
+  text-align: center;
+  margin-right:0.8rem ;
+}
+#dropdown-list li a:hover{
+  background-color: rgb(240, 248, 255);
+}
+.navbar-toggler:hover{
+  background-color: aliceblue;
+  }
+.navbar-toggler:focus {
+  box-shadow:0 0 0 0;
+}
+
+  
+
+/*main */
+#home{
+  background-image:url(https://mrwallpaper.com/images/hd/cute-bunny-with-cute-kitten-9l762sj571yxyuf3.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  max-width: 100%;
+  min-height: 100vh;
+  background-position: center 50%;
+}
+
+.text-content p{
+  color: rgb(47, 125, 131);
+  font-weight: 900;
+  font-family:"Caveat", cursive;
+  
+}
+.text-content h1{
+  font-weight: 700;
+  color: rgb(50, 155, 158);
+  text-shadow:3px 3px 3px rgb(12, 21, 22)  ;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+}
+.text-content h1,.text-content p{
+  transition: 0.7s ease;
+  
+}
+
+
+/* gallery */
+
+#gallery{
+  padding: 4rem 2rem;
+  background-image: linear-gradient(rgb(74 179 185), rgb(189 229 240));
+  width: 100%;
+  height: calc(100% - 4rem);
+}
+
+/* input search */
+
+#search-inp{
+  border: none;
+  outline: none;
+  padding: 0.7rem 1rem;
+  /* width: 10rem; */
+  height: 2.6rem; /* 2.6rem */
+}
+
+#search-inp:focus{
+  outline: 0.3rem solid #037e7e86;
+}
+
+.btn{
+  color: white;
+  background-color: #009999;
+  border: none;
+  width: 6rem;
+  height: 2.6rem;
+
+}
+.btn:hover{
+  background-color: #076363;
+}
+
+/* gallery Latest */
+#gallery h1{
+  font-family:"Dancing Script", cursive;
+  padding: 2rem 0;
+  color: rgb(187, 253, 255);
+
+}
+
+.container-1 {
+  background: rgba(255, 255, 255, 0.562);
+  padding: 2em 2em;
+  border-radius: 20px 20px;
+}
+
+.container-1 img {
+  display: block;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  aspect-ratio: 2/1;
+  transition:transform 0.2s;
+  opacity: 0.9;
+} 
+
+.container-1 img:hover{
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.719);
+  transform:scale(1.1);
+}
+
+
+/*second container*/
+.container-2{
+  width: 100%;
+  height: auto;
+  background-image:url(img/02-Vermont-Pink-Floral-Background-by-SlidesCorner.jpg) ;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.container-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: .6s ease-in-out;
+  aspect-ratio: 2/1;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.918);
+}
+
+.container-2 .row:hover img:not(:hover){
+  filter: blur(3px);
+}
+
+
+
+/* social media bar*/
+
+#contact {
+  position: fixed;
+  top: 20%;
+  width: 3.5em; /* or instead of w & transform => margin:0px; */
+  z-index:1;
+}
+
+.icon-bar a {
+  text-align:right;
+  padding: 0.6em;
+  font-size: 1.25rem;
+  background-color: rgba(240, 240, 240, 0.514);
+  border-bottom:1px solid rgb(156, 156, 156);
+  border-radius:0px 50px 50px 0px;
+  text-shadow:1px 1px 1px #000;
+  transform:translateX(-1rem);
+  transition:all 0.8s;
+  
+}
+.icon-bar a:hover {
+  background-color: #d4f3ff;
+  transform:translateX(0em);
+  /* margin-right:-30px; */
+}
+
+
+
+
+
+
+/* about */
+#about{
+  background-color:rgb(58, 88, 105);
+  width: 100%;
+  height: calc(100% - 3rem);/* 3rem of padding */
+  padding:3rem 0;
+}
+
+#about h5{
+  font-size: 1rem;
+  color: #9b98987c;
+  letter-spacing: 3px;
+}
+
+#about p{
+  font-size: 1.5rem;
+  color: rgb(124, 124, 124);
+  font-family:"Caveat", cursive;
+}
+
+.cont-bio h4{
+  font-size: 3rem;
+  color: rgb(158, 157, 157);
+  font-family: "Dancing Script", cursive;
+
+}
