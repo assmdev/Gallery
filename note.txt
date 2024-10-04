@@ -1,0 +1,1 @@
+just a plain txt for trying, (for testing) in order to add a new file using github interface ,instead of using cmd wit git add [file]
