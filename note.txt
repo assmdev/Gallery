@@ -1,1 +1,2 @@
 just a plain txt for trying, (for testing) in order to add a new file using github interface ,instead of using cmd wit git add [file]
+but this file is here not in local so u have to git pull in order to take it
