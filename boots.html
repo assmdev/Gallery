@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bootstrap demo</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="boots.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gluten:wght@100..900&family=Grey+Qo&family=Kalnia+Glaze:wght@100..700&family=Zain:wght@200;300;400;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar fixed-top navbar-expand-md" id="navbar">
+				<div class="container-fluid">
+					<span class="navbar-brand h1 logo fs-2">My gallery</span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarTogglerDemo02"
+						aria-controls="navbarTogglerDemo02"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end menu fs-3" id="navbarTogglerDemo02">
+						<ul class="navbar-nav mb-2 mb-lg-0" id="dropdown-list">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#home"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#gallery">gallery</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">join us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">about</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section
+				id="home"
+				class="d-flex flex-column justify-content-center align-items-center"
+			>
+				<div class="text-content">
+					<h1 class="mt-5 mb-3 text-center display-1">Welcome</h1>
+					<p class="text-center display-6">feel free to surf in the ocean of wonderland</p>
+				</div>
+
+			</section>
+			<section id="gallery">
+				<!-- search input-->
+				<div class="row mt-5">
+					<div class="col-md-5 mx-auto">
+						<div class="input-group">
+							<input class="form-control" type="search" value="search" id="search-inp">
+							<span class="input-group-append">
+								<button class="btn btn-outline-success" type="submit">
+									<i class="fas fa-search"></i>
+								</button>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<h1 class="display-5">Latest</h1>
+				<div class="container-fluid">
+					<div class="carousel slide" id="carouselExample">
+						<div class="container-1 carousel-inner">
+
+              <div class="carousel-item active">
+                <div class="row d-flex flex-row">
+                  <div class="wraper col-4">
+                    <a href="img/pexels-pixabay-45201.jpg"
+                      ><img src="img/pexels-pixabay-45201.jpg" alt="kitten"
+                    /></a>
+                  </div>
+                  <div class="wraper col-4">
+                    <a href="img/black-and-white-spot.jpg"
+                      ><img src="img/black-and-white-spot.jpg" alt="cat"
+                    /></a>
+                  </div>
+                  <div class="wraper col-4">
+                    <a href="img/images (1).jpeg"
+                      ><img src="img/images (1).jpeg" alt="rabbit"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="carousel-item">
+                <div class="row d-flex flex-row">
+                  <div class="wraper col-4">
+                    <a href="img/Muskoka-guinea-pig-scaled.jpg"
+                      ><img
+                        src="img/Muskoka-guinea-pig-scaled.jpg"
+                        alt="guineapig"
+                    /></a>
+                  </div>
+                  <div class="wraper col-4">
+                    <a href="img/1612742525536.jpeg"
+                      ><img src="img/1612742525536.jpeg" alt="dog"
+                    /></a>
+                  </div>
+                  <div class="wraper col-4">
+                    <a href="img/5ebaf4ae8d21df73a44d5a23_19.jpg"
+                      ><img
+                        src="img/5ebaf4ae8d21df73a44d5a23_19.jpg"
+                        alt="chick"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+						</div>
+
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExample"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExample"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="container-2 container-fluid my-5 py-5 px-5">
+					<div class="row">
+						<!-- 4*3=12 -->
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+							<img
+								src="https://img.buzzfeed.com/buzzfeed-static/static/2023-03/7/20/asset/79e51aa4b8af/sub-buzz-670-1678220113-3.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto"
+								alt="cat"
+							/>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+							<img
+								src="https://factanimal.com/wp-content/uploads/2023/03/cute-red-panda.jpg"
+								alt="panda"
+							/>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+							<img
+								src="https://paradepets.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_683/MTkxMzY1Nzg3ODY5ODQ5MTg2/fennec.webp"
+								alt="fox"
+							/>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+							<img
+								src="https://media.4-paws.org/0/d/f/2/0df2b94093183303e56b88ba799aae0dd38b83be/Kaninchen%20im%20Freigehege%20%282%29-4440x3072-1920x1328.jpg"
+								alt="rabbit"
+							/>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+							<img
+								src="https://lemagdesanimaux.ouest-france.fr/images/dossiers/categories2/chevre-172233-650-400.jpg"
+								alt="chevre"
+							/>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+							<img
+								src="https://paradepets.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTkxMzY1Nzg3ODY5NTIxNTA2/sand-cat.webp"
+								alt="cat"
+							/>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+							<img
+								src="https://paradepets.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTkxMzY1Nzg4NDExNDM4Njkw/an-arctic-fox-in-its-natural-habitat.webp"
+								alt="fox"
+							/>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+							<img
+								src="https://paradepets.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTkxMzY1Nzg4MTQ1MDM0ODUw/the-smallest-bird-in-the-world-the-bee-hummingbird.webp"
+								alt="bird"
+							/>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+							<img
+								src="https://paradepets.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTkxMzY1Nzg4MTQ0NTc2MDk4/pygmy-goat-or-dwarf-goat-capra-hircus-3-months-old-baby-goat-standing-on-dandelions.webp"
+								alt="goat"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact">
+				<div class="icon-bar d-flex flex-column">
+					<a href="#"
+						><i class="fa-brands fa-facebook" style="color: #2b99ee"></i
+					></a>
+					<a href="#"
+						><i class="fa-brands fa-square-instagram" style="color: #f012cb"></i
+					></a>
+					<a href="#"
+						><i class="fa-brands fa-google" style="color: #0994f0"></i
+					></a>
+					<a href="#"
+						><i class="fa-brands fa-pinterest" style="color: #bd0000"></i
+					></a>
+				</div>
+			</section>
+		</main>
+
+		<footer id="about">
+			<div class="container-fluid">
+				<div class="intro text-center row">
+					<h5
+						class="title text-uppercase fw-bold col-lg-12 col-md-12 col-sm-12"
+					>
+						About
+					</h5>
+					<p class="col-lg-12 col-md-12 col-sm-12">
+						Far far away, behind the word mountains, far from the countries ,
+						there live the blind texts.
+					</p>
+				</div>
+				<div class="cont-bio row m-4">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<h4>Allal Fadili</h4>
+						<h5 class="job text-uppercase fw-bold">photographer</h5>
+						<p>
+							From people and places to animals, Allal Fadili snaps pictures of
+							anything and everything Moroccan. Seeing the world through the
+							lens of this Moroccan photographer is a great way to get insider
+							insights into Morocco itself.
+						</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<h4>Achraf Baznani</h4>
+						<h5 class="job text-uppercase fw-bold">photographer</h5>
+						<p>
+							seeks to take the viewer from the real world to a dream-like place
+							through his images. Using programs like Photoshop, he transports
+							himself to a world where everything is larger than him, with some
+							dazzling effects.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
