@@ -1,2 +1,2 @@
-# my-project
-this is my test project
+# Gallery
+This is a gallery website
